@@ -1,63 +1,115 @@
 # Ripple Project Rules
 
-## UI
+## Project
 
-- Match the approved Ripple UI as closely as possible.
-- Do not redesign the layout.
-- Do not change spacing intentionally.
-- Do not change colors intentionally.
-- Use the supplied Ripple logo.
-- Use the Ripple logo as the application icon.
-- Desktop-first design.
+Ripple is a modern Linux desktop music player built with Flutter.
 
-## Music Library
+Target Platform:
+- Linux Desktop
 
-Read music recursively from:
+Framework:
+- Flutter
 
-/home/eric/Music
+Language:
+- Dart
 
-The library contains:
+Architecture:
+- Clean
+- Modular
+- Maintainable
 
-- Albums
-- Juice WRLD
-- Singles
+---
 
-Requirements:
+# Ripple Identity
 
-- MP3 support
-- Embedded artwork
-- Album view
-- Song view
-- Fast searching
+> Music, uninterrupted.
 
-## Performance
+Ripple exists to make listening to music effortless.
 
-Target machine:
+It should feel calm, elegant and responsive rather than flashy or distracting.
 
-HP Compaq 8000 Elite SFF
+---
 
-CPU:
-Intel Core 2 Duo E7500
+# Core Principles
 
-RAM:
-6 GB
+1. Music comes first.
 
-Operating System:
+The interface should never compete with the music.
 
-Linux Mint Cinnamon
+2. Desktop-first.
 
-Keep memory usage low.
+Every interaction should feel natural on Linux.
 
-## Development Rules
+3. Simplicity.
 
-Generate complete files only.
+If a feature does not improve the experience, don't build it.
 
-Every milestone must compile before moving on.
+4. Performance.
 
-Never leave the project in a broken state.
+Fast startup.
 
-Build reusable widgets.
+Smooth scrolling.
 
-Keep code organized.
+Responsive UI.
 
-Always test before the next milestone.
+Efficient metadata caching.
+
+5. Consistency.
+
+Use shared widgets.
+
+Avoid duplicated code.
+
+Follow the design system.
+
+---
+
+# Design Language
+
+Material Design 3
+
+Dark blue colour palette
+
+Rounded corners
+
+Soft shadows
+
+Subtle animations
+
+Elegant typography
+
+Minimal visual noise
+
+---
+
+# Development Workflow
+
+Every change must:
+
+✓ Compile successfully
+
+✓ Pass flutter analyze
+
+✓ Be committed to Git
+
+✓ Be pushed to GitHub
+
+---
+
+# Coding Standards
+
+Small reusable widgets.
+
+Meaningful file names.
+
+Meaningful commit messages.
+
+No large monolithic screens.
+
+Prefer composition over duplication.
+
+---
+
+# Goal
+
+Ripple should become a polished Linux music player that is enjoyable enough to use every day.
