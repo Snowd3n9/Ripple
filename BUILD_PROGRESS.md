@@ -1,36 +1,40 @@
-# Ripple Build Progress
+# Ripple Development Progress
 
-## Phase 1 - Foundation
-[x] Flutter project created
-[x] Dependencies installed
-[x] Assets folder created
-[x] Ripple logo added
-[x] App launches on Linux
+Current Milestone
 
-## Phase 2 - UI
-[ ] Sidebar
-[ ] Top Search Bar
-[ ] Welcome Section
-[ ] Recently Played
-[ ] Quick Mixes
-[ ] Latest Albums
-[ ] Bottom Player
+→ Milestone 2 — Application Shell
 
-## Phase 3 - Music Library
-[ ] Scan /home/Eric/Music recursively
-[ ] Read embedded artwork
-[ ] Display Albums
-[ ] Display Songs
-[ ] Search
+---
 
-## Phase 4 - Playback
-[ ] Play / Pause
-[ ] Previous / Next
-[ ] Seek Bar
-[ ] Shuffle
-[ ] Repeat
+Completed
 
-## Phase 5 - Linux Release
-[ ] Launcher icon
-[ ] Performance optimization
-[ ] Package for Linux Mint
+- [x] GitHub Repository
+- [x] Linux-only Project
+- [x] Project Structure
+- [x] Theme
+- [x] Constants
+- [x] Sidebar
+- [x] Home Foundation
+- [x] Git Workflow
+
+---
+
+In Progress
+
+- [ ] Shared Layout
+- [ ] Top Bar
+- [ ] Search Field
+- [ ] Mini Player
+
+---
+
+Upcoming
+
+- Home Screen
+- Songs Screen
+- Playback
+- Metadata Scanner
+- Album Art
+- Queue
+- Settings
+- First Alpha
