@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../theme/app_colors.dart';
+import '../widgets/common/search_field.dart';
 import '../widgets/sidebar/sidebar.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -17,25 +18,24 @@ class HomeScreen extends StatelessWidget {
 
             Expanded(
               child: Padding(
-                padding: const EdgeInsets.all(32),
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 32,
+                  vertical: 24,
+                ),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Container(
-                      height: 56,
-                      decoration: BoxDecoration(
-                        color: RippleColors.card,
-                        borderRadius: BorderRadius.circular(16),
-                      ),
-                    ),
+                    /// Search Bar
+                    const RippleSearchField(),
 
                     const SizedBox(height: 40),
 
+                    /// Welcome Title
                     const Text(
-                      'Welcome back',
+                      'Welcome Back',
                       style: TextStyle(
                         color: RippleColors.textPrimary,
-                        fontSize: 36,
+                        fontSize: 34,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -43,7 +43,7 @@ class HomeScreen extends StatelessWidget {
                     const SizedBox(height: 8),
 
                     const Text(
-                      'Ready for your next session?',
+                      'Pick up where you left off.',
                       style: TextStyle(
                         color: RippleColors.textSecondary,
                         fontSize: 16,
@@ -52,11 +52,24 @@ class HomeScreen extends StatelessWidget {
 
                     const SizedBox(height: 40),
 
-                    const Text(
-                      'Content coming next...',
-                      style: TextStyle(
-                        color: RippleColors.textSecondary,
-                        fontSize: 18,
+                    /// Placeholder Card
+                    Expanded(
+                      child: Container(
+                        width: double.infinity,
+                        decoration: BoxDecoration(
+                          color: RippleColors.card,
+                          borderRadius: BorderRadius.circular(24),
+                        ),
+                        child: const Center(
+                          child: Text(
+                            'Continue Listening\n(Coming Soon)',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              color: RippleColors.textSecondary,
+                              fontSize: 20,
+                            ),
+                          ),
+                        ),
                       ),
                     ),
                   ],
