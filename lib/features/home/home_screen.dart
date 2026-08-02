@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../theme/app_colors.dart';
-import '../widgets/common/search_field.dart';
-import '../widgets/sidebar/sidebar.dart';
+import '../../core/theme/app_colors.dart';
+import '../../widgets/common/search_field.dart';
+import '../navigation/sidebar.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -52,22 +52,13 @@ class HomeScreen extends StatelessWidget {
 
                     const SizedBox(height: 40),
 
-                    /// Placeholder Card
                     Expanded(
-                      child: Container(
-                        width: double.infinity,
-                        decoration: BoxDecoration(
-                          color: RippleColors.card,
-                          borderRadius: BorderRadius.circular(24),
-                        ),
-                        child: const Center(
-                          child: Text(
-                            'Continue Listening\n(Coming Soon)',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                              color: RippleColors.textSecondary,
-                              fontSize: 20,
-                            ),
+                      child: Center(
+                        child: Text(
+                          'Music Library Coming Soon',
+                          style: TextStyle(
+                            color: RippleColors.textSecondary,
+                            fontSize: 20,
                           ),
                         ),
                       ),

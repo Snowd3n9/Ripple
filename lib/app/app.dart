@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'screens/home_screen.dart';
-import 'theme/app_theme.dart';
+import '../core/theme/app_theme.dart';
+import '../features/home/home_screen.dart';
 
 class RippleApp extends StatelessWidget {
   const RippleApp({super.key});
